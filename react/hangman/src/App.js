@@ -61,7 +61,7 @@ function App() {
   //   showWord();
   // }
 
-  const showWord = () => {
+  const showWord = (guessed) => {
     setDisplay(
       word
         .split("")
@@ -151,7 +151,7 @@ function App() {
                     let temp = new Set(guessed).add(letter);
                     console.log("after set guessed");
                     setGuessed(Array.from(temp));
-                    showWord();
+                    showWord(Array.from(temp));
                   }}
                 >
                   {letter}
