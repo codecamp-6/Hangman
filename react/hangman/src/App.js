@@ -62,12 +62,6 @@ function App() {
   // }
 
   const showWord = () => {
-    // let show = word
-    //   .split("")
-    //   .map((char) => (guessed.includes(char) ? `${char} ` : "__ "))
-    //   .join("");
-    // const show = "__ __ __ __ __";
-    // console.log("show", show);
     setDisplay(
       word
         .split("")
