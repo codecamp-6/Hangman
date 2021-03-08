@@ -1,0 +1,57 @@
+html {
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 450px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .input-data {
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper .input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+.wrapper .input-data label {
+    position: absolute;
+    bottom: 7px;
+    left: 2px;
+    color: grey;
+    pointer-events: none;
+}
+
+.input-data input:focus ~ label {
+    transform: translateY(-20px);
+}
+
+@keyframes pop{
+    from{
+        //
+    } to {
+        ;
+        transform: scale(70%);
+        color-adjust: skyblue;
+    }
+}

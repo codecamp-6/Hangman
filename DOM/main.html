@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+  <!-- LAB 3 -->
+  <!-- <form>
+    <button type="submit" class="submit-button">SUBMIT</button>
+  </form>
+  <script>
+    const submitButton = document.querySelector(".submit-button") 
+    submitButton.addEventListener('click', (e) => e.preventDefault())
+  </script> -->
+
+  <!-- EXERCISE 2 -->
+      <!-- <button type="text" class="hide-text">CLICK TO HIDE TEXT</button>
+      <div class="text">TEXT</div>
+    <script>
+      const button = document.querySelector(".hide-text") 
+      button.addEventListener('click', () => document.querySelector(".text").innerHTML = '')
+    </script> -->
+
+<!-- EXERCISE 3 -->
+    <!-- <button type="text" class="button">HIDE</button>
+    <div class="text">TEXT TEXT TEXT</div>
+    <script>
+      const button = document.querySelector(".button")
+      const text = document.querySelector(".text")
+      
+      const handler = () => {
+        if (button.innerHTML === "HIDE") {
+          text.style.display = "none"
+          button.innerHTML = "SHOW"
+        } else {
+          text.style.display = "block"
+          button.innerHTML = "HIDE"
+        }
+      }
+        button.addEventListener('click', handler) -->
+    <!-- </script> -->
+
+    <!-- EXERCISE 4 HARD CODE APPROACH-->
+    <!-- <form>
+      <label for="province">Choose a province:</label>
+      <select class="province" name="province">
+        <option value="citya">City A</option>
+        <option value="cityb">City B</option>
+      </select>
+      <br>
+      <label for="district">Choose a district:</label>
+      <select class="district" name="district">
+      </select>
+    </form>
+
+        <script>
+
+          const cityAchoices = `<option value="A">A</option>
+        <option value="B">A</option>
+        <option value="C">C</option>
+        <option value="D">D</option>`
+
+            const cityBchoices = `<option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="H">H</option>`
+
+          const province = document.querySelector(".province")
+
+          province.addEventListener('change', (e) => {
+            if (e.target.value == 'citya') {
+              document.querySelector('.district').innerHTML = cityAchoices
+            } else if (e.target.value == 'cityb') {
+              document.querySelector('.district').innerHTML = cityBchoices
+            }
+          })
+        </script> -->
+
+<!-- EXERCISE 4 alternative APPROACH-->
+<!-- <form>
+      <label for="province">Choose a province:</label>
+      <select class="province" name="province">
+        <option value="bangkok">Bangkok</option>
+        <option value="changmai">Changmai</option>
+      </select>
+      <br>
+      <label for="district">Choose a district:</label>
+      <select class="district" name="district">
+      </select>
+    </form>
+
+        <script>
+
+        const mapProvinceDistrict = {
+          bangkok: [
+            {
+            value: 'A',
+            name: 'A'
+            }, 
+            {
+              value: 'B',
+              name: 'B'
+            }, 
+            {
+              value: 'C',
+              name: 'C'
+            }],
+            changmai: [
+            {
+              value: 'D',
+              name: 'D'
+            },
+            {
+              value: 'E',
+              name: 'E'
+            },
+            {
+              value: 'F',
+              name: 'F'
+            }]
+        }
+
+          const province = document.querySelector(".province")
+          const district = document.querySelector(".district")
+
+          province.addEventListener('change', (e) => {
+            const str = mapProvinceDistrict[e.target.value].map(item => `<option value="${item.name}">${item.value}</option>`).join('')
+
+            document.querySelector('.district').innerHTML = str
+          })
+        </script>
+ -->
+
+        <!-- EXERCISE 5
+        <button type="text" class="plus">+</button>
+        <button type="text" class="minus">-</button>
+        <button type="text" class="reset">RESET</button>
+
+        <br>
+
+        <div style="font-size: x-large;" class="num"><strong></strong></div>
+        <script>
+          const plus = document.querySelector('.plus')
+          const minus = document.querySelector('.minus')
+          const reset = document.querySelector('.reset')
+          const num = document.querySelector('.num')
+
+          let count = 0;
+          plus.addEventListener('click', () => num.innerHTML = count++)
+          minus.addEventListener('click', () => num.innerHTML = count--)
+          reset.addEventListener('click', () => {
+            num.innerHTML = 0
+            count = 0
+          }
+            )
+        </script> -->
+
+
+</body>
+</html>  
+  
