@@ -76,6 +76,7 @@ function App() {
         )
         .join("")
     );
+    forceUpdate();
   };
 
   const handleNewClick = () => {
